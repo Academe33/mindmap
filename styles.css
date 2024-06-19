@@ -1,0 +1,89 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Garante que o posicionamento relativo afete todos os elementos dentro do body */
+  }
+  
+  header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Garante que o cabeçalho fique sempre acima de outros elementos */
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #mindmap-container {
+    margin: 20px auto;
+    width: calc(100vw - 40px);
+    height: calc(100vh - 60px);
+    border: 1px solid #ddd;
+    overflow: hidden;
+    position: relative;
+    z-index: 1; /* Garante que o mapa mental fique abaixo do cabeçalho */
+  }
+  
+  #lines-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .node {
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: move;
+    transition: transform 0.2s ease;
+    background-color: #007bff; /* Mantém todos os nós azuis */
+    color: white;
+  }
+  
+  .node.selected {
+    border: 2px solid #ff5733; /* Mantém a borda laranja apenas para nós selecionados */
+  }
+  
+  .node.color1 {
+    background-color: #0a0310;
+    color: white;
+  }
+  
+  .node.color2 {
+    background-color: #49007e;
+    color: white;
+  }
+  
+  .node.color3 {
+    background-color: #ff005b;
+    color: white;
+  }
+  
+  .node.color4 {
+    background-color: #ff7d10;
+    color: white;
+  }
+  
+  .node.color5 {
+    background-color: #ffb238;
+    color: black;
+  }
+  

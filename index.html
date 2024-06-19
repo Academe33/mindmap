@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa Mental</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Mind map</h1>
+    <div class="controls">
+      <button onclick="addChildNode()">Adicionar</button>
+      <button onclick="deleteSelectedNode()">Deletar</button>
+      <button onclick="zoomIn()">Zoom In</button>
+      <button onclick="zoomOut()">Zoom Out</button>
+    </div>
+  </header>
+  <div id="mindmap-container">
+    <svg id="lines-container"></svg>
+    <div id="central-node" class="node selected color3">Tema Principal</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
